@@ -1,13 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body{
     margin: 0;
-    background-color: rgb(74, 67, 67);
-
+    background-color: rgb(194, 154, 46);
 }
 /*centralizar o site*/
 .container{
  width:80%; 
  margin: auto;
- 
 }
 
 header{
@@ -15,15 +18,13 @@ header{
     color: rgb(43, 34, 34);
     font-family: sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     display: flex;
 }
     
 
-.conteudo{  
+.lista_pages{  
     display: flex; /*ativa o flexbox*/
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 nav{
@@ -35,21 +36,20 @@ nav{
 
 main{
     display: flex;
+    gap: 10px;
     width: 70%;
     background-color: rgb(247, 182, 0);
     padding: 20px;
-    color: bisque ;
-
+    color: bisque;
 }
 
 footer{
     background-color:rgb(26, 31, 113);
     font-family:sans-serif;
-    font-size:large;
+    font-size:20px;
     text-align: center;
     padding: 15px;
     color:bisque;
-
 }
 
 section{
@@ -58,17 +58,18 @@ section{
     width: 80%;
     text-align: justify;
     border-radius: 15px;
+    font-family:sans-serif;
 }
 
 aside{ 
     background-color: rgb(26, 31, 113);
     padding: 20px;
     width:20%;
-    margin-left:10px ;
     border-radius : 15px;
-    
+    font-family:sans-serif;
+    text-align: center;
+    font-size: 23px;
 }
-
 
 header .logo{
     background-color: aliceblue;
@@ -80,13 +81,122 @@ header .logo{
 
 header .titulo {
     background-color: rgb(26, 31, 113);
-    padding: 10px;
+    padding: 20px;
     width: 70%;   
     border-radius: 15px;
     color: aliceblue;
+    font-size: 25px;
+    text-align: center;
 }
 
 header .logo img {
     width:100% ;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: translateY(-8px);
+    transform: scale(1.05);
     
 }
+
+.image{
+    display: flex;
+}
+
+.image img {
+    width:125%;
+    transition: all 0.4s ease;
+}
+
+.image img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+    
+}
+
+.lista_pages {
+    display: flex;
+}
+
+.lista_pages ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Lista em coluna */
+    gap: 10px;
+    font-family:sans-serif;
+}
+
+
+.lista_pages li {
+    flex: 1;
+    font-size: 20px ;
+    min-width: 200px;
+}
+
+.lista_pages a {
+    display: block; 
+    padding: 10px;
+    background-color: rgb(26, 31, 113);
+    border: 2px solid #ddd;
+    border-radius: 8px; 
+    text-decoration: none; 
+    color: bisque;
+    font-weight: bold; 
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.lista_pages a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.fotos {
+    display: flex;
+    gap: 10px;
+}
+
+.fotos img{
+    width: 40%;
+    transition: all 0.4s ease;
+    border-radius: 12px;
+}
+
+.fotos img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+    filter: brightness(70%);
+}
+
+.conteudo h3 {
+    font-size: 23px;
+    text-align: center;
+    flex: 4;
+}
+
+.conteudo p {
+    font-size: 20px;
+}
+.conteudo aside {
+    font-size: 23px;
+    flex : 1;
+    text-align: center;
+}
+
+.produtos {
+    width: 100%;
+}
+
+.produtos h3 {
+    font-size: 23px;
+    text-align: center;
+    flex: 4;
+}
+
